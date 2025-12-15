@@ -30,7 +30,7 @@ const adUnits = [
       {
         bidder: "yaleo",
         params: {
-          placementId: '95a09f24-afb8-441c-977b-08b4039cb88e',
+          placementId: '9c752583-d856-4b44-a227-c0ce6c7a8cfa',
         },
       },
     ],
