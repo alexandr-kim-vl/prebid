@@ -37,10 +37,17 @@ const adUnits = [
   },
 ];
 
+const isDebug = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  return urlParams.get('debug') === 'true';
+};
+
 window.pbjs = window.pbjs || {};
 window.pbjs.que = window.pbjs.que ?? [];
 window.pbjs.que.push(() => {
   window.pbjs.setConfig({
+    debug: isDebug(),
     appnexusAuctionKeywords: {
       genre: ['classical', 'jazz'],
       instrument: 'piano'
