@@ -56,7 +56,7 @@ window.pbjs.que.push(() => {
       },
     },
     storageAllowed: true,
-    bidderTimeout: 3000,
+    bidderTimeout: 1000,
   });
 
   window.pbjs.bidderSettings = {
